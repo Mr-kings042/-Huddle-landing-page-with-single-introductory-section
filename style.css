@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(images/bg-desktop.svg);
+    background-color:hsl(257, 40%, 49%) ;
+
+}
+/* header{
+    position: fixed;
+} */
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+h1{
+    padding-top: -10rem;
+    color: hsl(300, 24%, 93%);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 2px;
+    color: hsl(300, 24%, 93%);
+    padding-top: 2rem;
+}
+span{
+    display: block;
+    background-color: hsl(300, 24%, 93%);
+    border-radius: 30px;
+    height: 35px;
+    width: 170px;
+    text-align: center;
+    padding-top: 14px;
+    cursor: pointer;
+    box-shadow:  0 0 20px black;
+}
+.social-media{
+   text-align: right;
+   padding-right: 1rem;
+   font-size: 2rem;
+}
+
+.social-media i{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid hsl(300, 24%, 93%);
+    font-size: 20px;
+    border-radius: 50%;
+    color: hsl(300, 24%, 93%);
+
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+ }
+.attribution a { 
+    color: hsl(240, 2%, 9%); 
+}
+/* responsive */
+@media (min-width:275px) and (max-width: 992px){
+    *{
+        margin: 0;
+        padding: 0;
+       
+    }
+    body{
+        overflow-x: hidden;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10rem;
+        margin: 2rem;
+    }
+    span{
+        display: block;
+        background-color: hsl(300, 24%, 93%);
+        border-radius: 30px;
+        height: 35px;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 14px;
+        cursor: pointer;
+        box-shadow:  0 0 20px black;
+    }
+    .social-media{
+        text-align: center;
+        padding-top: 11rem;
+        font-size: 2rem;
+     }
+}
